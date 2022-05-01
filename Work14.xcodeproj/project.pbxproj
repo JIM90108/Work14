@@ -13,6 +13,13 @@
 		EB410A70281B8B3600F9641A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB410A6E281B8B3600F9641A /* Main.storyboard */; };
 		EB410A72281B8B3700F9641A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB410A71281B8B3700F9641A /* Assets.xcassets */; };
 		EB410A75281B8B3700F9641A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB410A73281B8B3700F9641A /* LaunchScreen.storyboard */; };
+		EB410A7D281B8C9900F9641A /* Message.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB410A7C281B8C9900F9641A /* Message.storyboard */; };
+		EB410A7F281B8CCE00F9641A /* EditImage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB410A7E281B8CCE00F9641A /* EditImage.storyboard */; };
+		EB410A81281BB9DD00F9641A /* PreviewMessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB410A80281BB9DD00F9641A /* PreviewMessageViewController.swift */; };
+		EB410A83281BBA0A00F9641A /* EditMessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB410A82281BBA0A00F9641A /* EditMessageViewController.swift */; };
+		EB410A85281BE96B00F9641A /* PreviewImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB410A84281BE96B00F9641A /* PreviewImageViewController.swift */; };
+		EB410A87281BE9A600F9641A /* EditImageViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB410A86281BE9A600F9641A /* EditImageViewViewController.swift */; };
+		EB410A8B281E724500F9641A /* ImageEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB410A8A281E724500F9641A /* ImageEditor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +31,13 @@
 		EB410A71281B8B3700F9641A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EB410A74281B8B3700F9641A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EB410A76281B8B3700F9641A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EB410A7C281B8C9900F9641A /* Message.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Message.storyboard; sourceTree = "<group>"; };
+		EB410A7E281B8CCE00F9641A /* EditImage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = EditImage.storyboard; sourceTree = "<group>"; };
+		EB410A80281BB9DD00F9641A /* PreviewMessageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewMessageViewController.swift; sourceTree = "<group>"; };
+		EB410A82281BBA0A00F9641A /* EditMessageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditMessageViewController.swift; sourceTree = "<group>"; };
+		EB410A84281BE96B00F9641A /* PreviewImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewImageViewController.swift; sourceTree = "<group>"; };
+		EB410A86281BE9A600F9641A /* EditImageViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditImageViewViewController.swift; sourceTree = "<group>"; };
+		EB410A8A281E724500F9641A /* ImageEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageEditor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,7 +73,14 @@
 				EB410A68281B8B3600F9641A /* AppDelegate.swift */,
 				EB410A6A281B8B3600F9641A /* SceneDelegate.swift */,
 				EB410A6C281B8B3600F9641A /* ViewController.swift */,
+				EB410A80281BB9DD00F9641A /* PreviewMessageViewController.swift */,
+				EB410A82281BBA0A00F9641A /* EditMessageViewController.swift */,
+				EB410A84281BE96B00F9641A /* PreviewImageViewController.swift */,
+				EB410A86281BE9A600F9641A /* EditImageViewViewController.swift */,
+				EB410A8A281E724500F9641A /* ImageEditor.swift */,
 				EB410A6E281B8B3600F9641A /* Main.storyboard */,
+				EB410A7C281B8C9900F9641A /* Message.storyboard */,
+				EB410A7E281B8CCE00F9641A /* EditImage.storyboard */,
 				EB410A71281B8B3700F9641A /* Assets.xcassets */,
 				EB410A73281B8B3700F9641A /* LaunchScreen.storyboard */,
 				EB410A76281B8B3700F9641A /* Info.plist */,
@@ -126,6 +147,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				EB410A75281B8B3700F9641A /* LaunchScreen.storyboard in Resources */,
+				EB410A7F281B8CCE00F9641A /* EditImage.storyboard in Resources */,
+				EB410A7D281B8C9900F9641A /* Message.storyboard in Resources */,
 				EB410A72281B8B3700F9641A /* Assets.xcassets in Resources */,
 				EB410A70281B8B3600F9641A /* Main.storyboard in Resources */,
 			);
@@ -138,9 +161,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB410A87281BE9A600F9641A /* EditImageViewViewController.swift in Sources */,
+				EB410A85281BE96B00F9641A /* PreviewImageViewController.swift in Sources */,
+				EB410A8B281E724500F9641A /* ImageEditor.swift in Sources */,
 				EB410A6D281B8B3600F9641A /* ViewController.swift in Sources */,
 				EB410A69281B8B3600F9641A /* AppDelegate.swift in Sources */,
 				EB410A6B281B8B3600F9641A /* SceneDelegate.swift in Sources */,
+				EB410A81281BB9DD00F9641A /* PreviewMessageViewController.swift in Sources */,
+				EB410A83281BBA0A00F9641A /* EditMessageViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

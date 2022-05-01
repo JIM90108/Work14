@@ -1,24 +1,150 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Work14" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="DCz-t8-u18">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="You" translatesAutoresizingMaskIntoConstraints="NO" id="yaL-2z-en7">
+                                <rect key="frame" x="132" y="116" width="150" height="150"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="UCU-rY-Awi" appends="YES" id="5Y6-Qw-MO6"/>
+                                </connections>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="❤️" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mbX-Gm-oNv">
+                                <rect key="frame" x="171" y="408" width="72" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="67"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Dear" translatesAutoresizingMaskIntoConstraints="NO" id="yRf-iN-RcK">
+                                <rect key="frame" x="132" y="543" width="150" height="150"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="OLN-7n-rMC" appends="YES" id="XZR-uK-05A"/>
+                                </connections>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4th-Bo-scy">
+                                <rect key="frame" x="132" y="274" width="150" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" systemColor="systemYellowColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="有駿"/>
+                                <connections>
+                                    <segue destination="bFL-us-H7B" kind="show" destinationCreationSelector="passMessage:" id="WYf-gK-Aep"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R57-fh-Oge">
+                                <rect key="frame" x="132" y="313" width="150" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" systemColor="systemYellowColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="JIM"/>
+                                <connections>
+                                    <segue destination="bFL-us-H7B" kind="show" destinationCreationSelector="passSmallMessage:" id="lVj-4K-M4z"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dfC-G0-xcj">
+                                <rect key="frame" x="132" y="701" width="150" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" systemColor="systemYellowColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="譽勻"/>
+                                <connections>
+                                    <segue destination="bFL-us-H7B" kind="show" destinationCreationSelector="passMessage2:" id="Whn-1c-ioa"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3TT-I1-qJ8">
+                                <rect key="frame" x="132" y="740" width="150" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" systemColor="systemYellowColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Irene"/>
+                                <connections>
+                                    <segue destination="bFL-us-H7B" kind="show" destinationCreationSelector="passSmallMessage2:" id="dWx-1h-Qbk"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <connections>
+                        <outlet property="backViewImage" destination="DCz-t8-u18" id="GLz-O1-AaU"/>
+                        <outlet property="headshot2Image" destination="yRf-iN-RcK" id="aa6-r2-AfJ"/>
+                        <outlet property="headshotImage" destination="yaL-2z-en7" id="4Pk-kv-h3F"/>
+                        <outlet property="messageName2Button" destination="dfC-G0-xcj" id="mac-QG-FaP"/>
+                        <outlet property="messageNameButton" destination="4th-Bo-scy" id="d8h-J2-5do"/>
+                        <outlet property="messageSmallName2Button" destination="3TT-I1-qJ8" id="bAq-JB-9jV"/>
+                        <outlet property="messageSmallNameButton" destination="R57-fh-Oge" id="nXN-1V-WGm"/>
+                        <segue destination="YIN-Wv-2To" kind="show" identifier="previewImage" destinationCreationSelector="passImage:" id="Wub-MP-Izq"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="UCU-rY-Awi">
+                    <connections>
+                        <action selector="headshotImage:" destination="BYZ-38-t0r" id="6Hd-gI-daG"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="OLN-7n-rMC">
+                    <connections>
+                        <action selector="headshotImage2:" destination="BYZ-38-t0r" id="bTQ-ln-iwm"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
+            <point key="canvasLocation" x="28.985507246376812" y="67.633928571428569"/>
+        </scene>
+        <!--EditImage-->
+        <scene sceneID="kfR-Ff-qIt">
+            <objects>
+                <viewControllerPlaceholder storyboardName="EditImage" id="YIN-Wv-2To" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="zOi-Pe-Guh"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="psa-d6-Cca" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="750" y="-120"/>
+        </scene>
+        <!--Message-->
+        <scene sceneID="n0m-fR-f8A">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Message" id="bFL-us-H7B" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="jlG-QA-bfO"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AST-eN-9u4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="756" y="68"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="WYf-gK-Aep"/>
+    </inferredMetricsTieBreakers>
+    <resources>
+        <image name="Dear" width="886" height="886"/>
+        <image name="You" width="886" height="886"/>
+        <image name="background" width="852" height="480"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>
